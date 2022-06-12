@@ -1,6 +1,6 @@
 import React from "react"
-import "style.css"
-import "tailwindcss/dist/base.css"
+//import "style.css"
+import "tailwindcss/base.css"
 import AnimationRevealPage from "./helpers/AnimationRevealPage"
 import Hero from "./components/hero/FullWidthWithImage"
 
@@ -11,4 +11,4 @@ function App() {
     </AnimationRevealPage>
   )
 }
-export default App;
+export default App; 

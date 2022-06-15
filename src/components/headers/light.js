@@ -65,6 +65,7 @@ export const DesktopNavLinks = tw.nav`
     </NavLinks>
   ];
 
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const { showNavLinks, animation, toggleNavbar } = useAnimatedNavToggler();
   const collapseBreakpointCss = collapseBreakPointCssMap[collapseBreakpointClass];
 

@@ -40,8 +40,7 @@ const Actions = styled.div`
     ${tw`mt-4 sm:mt-0 sm:ml-4 bg-gray-300 text-gray-700 hover:bg-gray-400 hover:text-gray-800`}
   }
 `;
-
-export default ({
+const name = ({
   navLinks = [
     <NavLinks key={1}>
       <NavLink href="#">About</NavLink>
@@ -64,6 +63,7 @@ export default ({
   secondaryActionUrl = "#",
   secondaryActionText = "Search Hotels"
 }) => {
+  
   return (
     <Container>
       <TwoColumn>
@@ -86,4 +86,6 @@ export default ({
       </TwoColumn>
     </Container>
   );
-};
+  }; 
+
+export default name

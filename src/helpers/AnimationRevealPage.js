@@ -50,8 +50,9 @@ function AnimatedSlideInComponent({ direction = "left", offset = 30, children })
   );
 }
 
-export default props => (
+const props = (
   <StyledDiv className="App">
-    <AnimationReveal {...props} />
+    <AnimationReveal />
   </StyledDiv>
 );
+export default props

@@ -45,7 +45,7 @@ const CustomersLogoStrip = styled.div`
   }
 `;
 
-export default ({ roundedHeaderButton }) => {
+const tocolin = ({ roundedHeaderButton }) => {
   return (
     <>
       <Header roundedHeaderButton={roundedHeaderButton} />
@@ -79,3 +79,4 @@ export default ({ roundedHeaderButton }) => {
     </>
   );
 };
+export default tocolin

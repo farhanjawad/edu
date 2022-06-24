@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { setState } from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
 //eslint-disable-next-line
@@ -58,7 +58,7 @@ const StyledModal = styled(ReactModalAdapter)`
 `;
 const CloseModalButton = tw.button`absolute top-0 right-0 mt-8 mr-8 hocus:text-primary-500`;
 
-export default ({
+const tocolvid = ({
   heading = "Modern React Templates, Just For You",
  description="Our templates are easy to setup, understand and customize. Fully modular components with a variety of pages and components.",
   primaryButtonText="Get Started",
@@ -69,7 +69,7 @@ export default ({
   imageCss=null,
   imageDecoratorBlob = false,
 }) => {
-  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [modalIsOpen, setModalIsOpen] = setState(false);
 
   const toggleModal = () => setModalIsOpen(!modalIsOpen);
 
@@ -121,3 +121,4 @@ export default ({
     </>
   );
 };
+export default tocolvid

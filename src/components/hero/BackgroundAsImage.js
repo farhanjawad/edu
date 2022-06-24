@@ -55,7 +55,7 @@ const StyledResponsiveVideoEmbed = styled(ResponsiveVideoEmbed)`
   }
 `;
 
-export default () => {
+const bgimg = () => {
   const navLinks = [
     <NavLinks key={1}>
       <NavLink href="#">
@@ -104,3 +104,4 @@ export default () => {
     </Container>
   );
 };
+export default bgimg

@@ -56,7 +56,7 @@ const CardMetaFeature = styled.div`
 `;
 const CardAction = tw(PrimaryButtonBase)`w-full mt-6`;
 
-export default ({
+const cardsptimg = ({
   subheading = "Our Portfolio",
   headingHtmlComponent = (
     <>
@@ -130,3 +130,4 @@ export default ({
     </Container>
   );
 };
+export default cardsptimg

@@ -52,7 +52,7 @@ const Card = styled.div`
   }
 `;
 
-export default ({
+const thrcolimgprimbg = ({
   cards = null,
   heading = "Amazing Features",
   subheading = "",
@@ -107,3 +107,4 @@ export default ({
     </Container>
   );
 };
+export default thrcolimgprimbg

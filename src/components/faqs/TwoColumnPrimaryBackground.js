@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { setState } from "react";
 import { motion } from "framer-motion";
 import tw from "twin.macro";
 import styled, { css } from "styled-components/macro"; //eslint-disable-line
@@ -27,7 +27,7 @@ const QuestionToggleIcon = styled(motion.span)`
 `;
 const Answer = tw(motion.div)`hidden text-sm font-normal mt-4 text-gray-300`;
 
-export default ({
+const tocpbg = ({
   subheading = "",
   heading = "Frequently Asked Questions",
   description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -66,7 +66,7 @@ export default ({
 }) => {
   const faqCol1 = [];
   const faqCol2 = [];
-  const [activeQuestionIndex, setActiveQuestionIndex] = useState(null);
+  const [activeQuestionIndex, setActiveQuestionIndex] = setState(null);
 
   const toggleQuestion = questionIndex => {
     if (activeQuestionIndex === questionIndex) setActiveQuestionIndex(null);
@@ -125,3 +125,4 @@ export default ({
     </PrimaryBackgroundContainer>
   );
 };
+export default tocpbg
